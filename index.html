@@ -5,336 +5,363 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nathaly Almanzar</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Nathaly Almanzar: New Jersey content creator. Fitness, style, and lifestyle video diaries. Represented by Loperena Management.">
+<meta name="description" content="Nathaly Almanzar: lifestyle creator in New Jersey. Style, food, fitness, and life with my girls. Represented by Loperena Management.">
+<meta property="og:title" content="Nathaly Almanzar · Lifestyle Creator">
+<meta property="og:description" content="Style, food, fitness, and life with my girls. New Jersey and NYC.">
+<meta property="og:image" content="https://loperenamanagement.github.io/nathaly-portfolio/Media/nathaly.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@400;500;600&display=swap">
 <style>
-/* Layout: clean single-page media kit. Hero with profile card, stats band, then about, content, featured work, partnerships, contact. Book details stay subtle: ribbon markers, page-edge card, editorial serif. */
+/* Layout: creator media kit. Hero (name + photo card), proof band, about, content pillars, featured videos, brands featured, packages, contact. Ribbon-bookmark section markers and a page-edge photo card carry the book motif quietly. */
 :root{
-  --bg:#fffdf7;
+  --bg:#fffaf3;
   --surface:#ffffff;
-  --tint:#fff4d1;
-  --blush:#ffe6f0;
-  --ink:#2e1226;
-  --muted:#76586c;
-  --line:#efe3d6;
-  --pink:#e8357f;
-  --sun:#f6c445;
+  --tint:#fff1c9;
+  --blush:#ffe4ee;
+  --ink:#2b1124;
+  --muted:#735669;
+  --line:#efe1d4;
+  --pink:#e2367d;
+  --sun:#f4bf3a;
   --on-pink:#ffffff;
-  --display:"Bodoni Moda", "Didot", Georgia, serif;
+  --display:"DM Serif Display", "Bodoni 72", Georgia, serif;
   --body:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#1b0c17;--surface:#251220;--tint:#2f1a1e;--blush:#331526;--ink:#fbeef4;--muted:#c9a6ba;--line:#3d2235;--pink:#ff5c9c;--sun:#f6c445;--on-pink:#1b0c17;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1b0c17;--surface:#251220;--tint:#2f1a1e;--blush:#331526;--ink:#fbeef4;--muted:#c9a6ba;--line:#3d2235;--pink:#ff5c9c;--sun:#f6c445;--on-pink:#1b0c17;color-scheme:dark}
+  --bg:#1a0b16;--surface:#24111f;--tint:#2e1a1c;--blush:#321425;--ink:#fbeff4;--muted:#caa8bc;--line:#3c2134;--pink:#ff5d9d;--sun:#f4bf3a;--on-pink:#1a0b16;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a0b16;--surface:#24111f;--tint:#2e1a1c;--blush:#321425;--ink:#fbeff4;--muted:#caa8bc;--line:#3c2134;--pink:#ff5d9d;--sun:#f4bf3a;--on-pink:#1a0b16;color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
-.wrap{max-width:1100px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;margin:0;text-wrap:balance}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.005em}
 p{margin:0}
 a{color:inherit}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:4px}
 
 /* nav */
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
-.brand{font-family:var(--display);font-size:20px;font-weight:700;text-decoration:none;letter-spacing:.01em}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-family:var(--display);font-size:22px;text-decoration:none}
 .brand span{color:var(--pink)}
-.nav{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:500}
+.nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:500}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover{color:var(--ink)}
+.nav .cta{color:var(--on-pink);background:var(--pink);padding:8px 16px;border-radius:999px}
+.nav .cta:hover{color:var(--on-pink)}
 
-/* section marker: a ribbon bookmark */
-.marker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--pink)}
+/* shared */
+.marker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
 .marker::before{content:"";width:10px;height:16px;background:var(--pink);clip-path:polygon(0 0,100% 0,100% 100%,50% 75%,0 100%)}
-
-/* buttons */
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--ink);background:transparent;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--ink);background:transparent;cursor:pointer;transition:transform .15s}
 .btn.primary{background:var(--pink);border-color:var(--pink);color:var(--on-pink)}
 .btn:hover{transform:translateY(-1px)}
+section{padding-block:96px}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:40px;max-width:640px}
+.head h2{font-size:clamp(38px,5vw,56px)}
+.head p{color:var(--muted);font-size:18px}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-block:72px 64px}
-.hero .role{font-size:14px;font-weight:500;color:var(--muted);letter-spacing:.04em}
-.hero h1{font-size:clamp(48px,7vw,86px);margin:12px 0 18px}
-.hero h1 em{font-style:italic;color:var(--pink)}
-.hero .lede{font-size:19px;color:var(--muted);max-width:38ch;margin-bottom:28px}
-.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px 14px 14px 6px;padding:28px;
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;padding-block:72px 72px}
+.hero .role{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-size:clamp(58px,8.4vw,104px);margin:14px 0 22px;line-height:.95}
+.hero h1 em{color:var(--pink)}
+.hero .lede{font-size:20px;color:var(--muted);max-width:36ch;margin-bottom:30px}
+.platforms{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.plat{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--surface);font-size:14px}
+.plat b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:12px;font-weight:600}
+.plat strong{font-weight:600}
+.plat span{color:var(--muted)}
+
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px 16px 16px 6px;padding:16px 16px 20px 24px;
   box-shadow:3px 3px 0 var(--tint),6px 6px 0 var(--line),9px 9px 0 var(--tint),10px 10px 0 var(--line)}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(var(--pink),var(--sun));border-radius:6px 0 0 6px}
-.mono{width:84px;height:84px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:32px;font-weight:700;box-shadow:0 0 0 4px var(--surface),0 0 0 7px var(--sun)}
-.card .handle{margin-top:16px;font-weight:600;font-size:17px}
-.card .tags{color:var(--muted);font-size:14px;margin-top:2px}
-.card dl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px 0 0;padding-top:18px;border-top:1px solid var(--line)}
-.card dt{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.card dd{margin:2px 0 0;font-family:var(--display);font-size:26px;font-weight:700;font-variant-numeric:tabular-nums}
-
 .photo{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:10px;overflow:hidden;background:linear-gradient(160deg,var(--blush),var(--tint))}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-.photo-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--muted);font-size:13px}
-.badge{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--surface);color:var(--ink);font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(46,18,38,.18)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:14px;bottom:14px;background:var(--surface);color:var(--ink);font-size:12px;font-weight:600;padding:7px 13px;border-radius:999px;box-shadow:0 2px 10px rgba(43,17,36,.2)}
 .badge::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb36d;margin-right:7px;vertical-align:1px}
-.who-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}
-.who-row .handle{margin-top:0}
-.card{padding:18px 18px 22px 26px}
-/* stats band */
-.band{background:var(--tint);border-block:1px solid var(--line)}
-.band .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:28px}
-.stat .v{font-family:var(--display);font-size:38px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
-.stat .k{font-size:14px;color:var(--muted);margin-top:6px}
+.card .meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:16px}
+.card .meta strong{font-family:var(--display);font-size:24px;font-weight:400}
+.card .meta span{color:var(--muted);font-size:14px}
 
-section{padding-block:80px}
-.head{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:640px}
-.head h2{font-size:clamp(34px,4.6vw,48px)}
-.head p{color:var(--muted)}
+/* proof band */
+.band{background:var(--ink);color:var(--bg)}
+.band .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:34px}
+.stat{padding:4px 24px;border-left:1px solid color-mix(in srgb,var(--bg) 18%,transparent)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat .v{font-family:var(--display);font-size:46px;line-height:1;font-variant-numeric:tabular-nums}
+.stat .v em{font-style:normal;color:var(--sun)}
+.stat .k{font-size:14px;opacity:.75;margin-top:8px}
 
 /* about */
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
-.about p+p{margin-top:14px}
-.quote{background:var(--blush);border-radius:12px;padding:28px}
-.quote blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:26px;line-height:1.3}
-.quote cite{display:block;margin-top:12px;font-style:normal;font-size:14px;color:var(--muted)}
-.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;margin:24px 0 0;font-size:15px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.about p+p{margin-top:16px}
+.about .copy{font-size:18px}
+.quote{margin:0;background:var(--blush);border-radius:16px;padding:36px 34px;position:relative}
+.quote::before{content:"\201C";position:absolute;top:-8px;left:26px;font-family:var(--display);font-size:110px;line-height:1;color:var(--pink)}
+.quote blockquote{margin:28px 0 0;font-family:var(--display);font-size:clamp(28px,3.2vw,36px);line-height:1.15}
+.quote cite{display:block;margin-top:16px;font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:16px}
 .facts dt{color:var(--muted)}
 .facts dd{margin:0;font-weight:500;min-width:0}
 
 /* pillars */
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.pillar{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
-.pillar .dot{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:16px}
-.pillar h3{font-size:26px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.pillar .n{font-family:var(--display);font-size:15px;color:var(--pink)}
+.pillar h3{font-size:28px}
 .pillar p{color:var(--muted);font-size:15px;flex:1}
-.pillar .fits{font-size:13px;border-top:1px solid var(--line);padding-top:12px;color:var(--ink)}
-.pillar .fits b{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-bottom:2px}
+.pillar .fits{font-size:14px;border-top:1px solid var(--line);padding-top:12px}
+.pillar .fits b{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:3px}
 
-/* work */
-.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+/* videos */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .vid{border:0;padding:0;background:none;cursor:pointer;text-align:left}
-.vid .thumb{aspect-ratio:9/14;max-width:100%;border-radius:12px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:18px}
-
-.vid .play{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center}
-.vid .play::after{content:"";border-left:13px solid #2e1226;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
-.vid .t{position:relative;font-family:var(--display);font-size:24px;line-height:1.1;color:#fff;text-shadow:0 1px 8px rgba(46,18,38,.35)}
-.vid .cat{display:block;margin-top:10px;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.vid .thumb{aspect-ratio:9/14;max-width:100%;border-radius:14px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:20px;transition:transform .2s}
 .vid:hover .thumb{transform:translateY(-3px)}
-.vid .thumb{transition:transform .2s}
+.vid .play{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center}
+.vid .play::after{content:"";border-left:13px solid #2b1124;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.vid .t{position:relative;font-family:var(--display);font-size:26px;line-height:1.08;color:#fff;text-shadow:0 1px 10px rgba(43,17,36,.4)}
+.vid .cat{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+
+/* brands */
+.brands{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.brand-cell{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 16px;text-align:center;font-family:var(--display);font-size:22px;line-height:1.1;min-height:96px;display:grid;place-items:center}
+.brand-cell small{display:block;font-family:var(--body);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.note{margin-top:16px;font-size:14px;color:var(--muted)}
 
 /* packages */
 .packs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.pack{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:12px}
-.pack.feat{border:2px solid var(--pink)}
-.pack .len{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
-.pack h3{font-size:28px}
+.pack{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:12px}
+.pack.feat{border:2px solid var(--pink);position:relative}
+.pack.feat::after{content:"Recommended";position:absolute;top:-12px;right:22px;background:var(--pink);color:var(--on-pink);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.pack .len{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--pink)}
+.pack h3{font-size:30px}
 .pack ul{margin:0;padding-left:18px;color:var(--muted);flex:1}
 .pack li+li{margin-top:6px}
-.fine{margin-top:20px;font-size:14px;color:var(--muted)}
+.addons{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted)}
+.addons span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink);background:var(--surface)}
 
 /* contact */
-.contact{background:var(--ink);color:var(--bg);border-radius:18px;padding:52px 44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.contact h2{font-size:clamp(34px,4.6vw,50px)}
-.contact h2 em{font-style:italic;color:var(--sun)}
-.contact p{opacity:.8;margin-top:14px;max-width:40ch}
+.contact{background:var(--ink);color:var(--bg);border-radius:20px;padding:56px 48px;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.contact h2{font-size:clamp(38px,5vw,58px)}
+.contact h2 em{color:var(--sun)}
+.contact p{opacity:.8;margin-top:16px;max-width:40ch}
 .contact .marker{color:var(--sun)}.contact .marker::before{background:var(--sun)}
-.mail{background:var(--bg);color:var(--ink);border-radius:12px;padding:8px 20px}
-.mrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.mail{background:var(--bg);color:var(--ink);border-radius:14px;padding:8px 22px}
+.mrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .mrow:last-child{border-bottom:0}
-.mrow .k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mrow .k{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .mrow .v{font-weight:600;word-break:break-all;min-width:0}
-.copy{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:7px 16px;font-size:13px;font-weight:600;cursor:pointer}
+.copy{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer}
 .mrow a{font-weight:600;text-decoration-color:var(--pink);text-underline-offset:3px}
-
-footer{padding-block:36px 48px;text-align:center;color:var(--muted);font-size:14px}
+footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:14px}
 
 /* lightbox */
-.lb{position:fixed;inset:0;z-index:50;background:rgba(27,12,23,.8);display:grid;place-items:center;padding:20px}
-.lb-card{background:var(--surface);color:var(--ink);border-radius:14px;padding:16px;width:min(380px,100%);display:flex;flex-direction:column;gap:12px}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(26,11,22,.84);display:grid;place-items:center;padding:20px}
+.lb-card{background:var(--surface);color:var(--ink);border-radius:16px;padding:16px;width:min(380px,100%);display:flex;flex-direction:column;gap:12px}
 .lb-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .lb-top h3{font-size:22px}
-.lb-video{aspect-ratio:9/16;max-height:68vh;width:100%;background:var(--ink);color:var(--bg);border-radius:10px;overflow:hidden;display:grid;place-items:center;text-align:center;padding:16px}
+.lb-video{aspect-ratio:9/16;max-height:64vh;width:100%;background:#000;border-radius:10px;overflow:hidden}
 .lb-video iframe{width:100%;height:100%;border:0}
-.lb-video:fullscreen{max-height:none;border-radius:0;padding:0;background:#000}
+.lb-video:fullscreen{max-height:none;border-radius:0}
+.lb-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lb-actions .btn{padding:11px 14px;font-size:14px}
 
-@media (max-width:900px){
+@media (max-width:920px){
   .hero,.about,.contact{grid-template-columns:1fr}
-  .hero{gap:40px;padding-block:48px}
+  .hero{gap:44px;padding-block:44px 56px}
   .pillars{grid-template-columns:repeat(2,1fr)}
   .packs{grid-template-columns:1fr}
-  .band .wrap{grid-template-columns:repeat(2,1fr)}
+  .band .wrap{grid-template-columns:repeat(2,1fr);row-gap:24px}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .brands{grid-template-columns:repeat(3,1fr)}
+  .nav a:not(.cta){display:none}
 }
 @media (max-width:560px){
-  .pillars,.work{grid-template-columns:1fr 1fr}
   .pillars{grid-template-columns:1fr}
-  .nav{display:none}
-  .contact{padding:36px 22px}
-  section{padding-block:56px}
+  .work{grid-template-columns:1fr 1fr;gap:14px}
+  .vid .t{font-size:20px}
+  .brands{grid-template-columns:repeat(2,1fr)}
+  .contact{padding:38px 22px}
+  section{padding-block:64px}
+  .stat .v{font-size:38px}
 }
 </style>
 </head>
 <body>
 
-
 <header class="top"><div class="wrap">
   <a class="brand" href="#top">Nathaly<span>.</span></a>
-  <nav class="nav"><a href="#about">About</a><a href="#content">Content</a><a href="#work">Work</a><a href="#partner">Partner</a><a href="#contact">Contact</a></nav>
+  <nav class="nav"><a href="#about">About</a><a href="#content">Content</a><a href="#work">Videos</a><a href="#brands">Brands</a><a class="cta" href="#contact">Work with me</a></nav>
 </div></header>
 
 <main id="top">
   <div class="wrap">
     <div class="hero">
       <div>
-        <div class="role">Content creator &middot; New Jersey</div>
+        <div class="role">Lifestyle creator &middot; New Jersey &amp; NYC</div>
         <h1>Nathaly <em>Almanzar</em></h1>
-        <p class="lede">Fitness, style, and life with my girls, filmed like a video diary. I only share what I'd recommend to my friends.</p>
+        <p class="lede">Style, food, fitness, and life with my girls, filmed like a video diary. I only share what I'd actually recommend to my friends.</p>
         <div class="btns">
-          <a class="btn primary" href="#contact">Work with Nat</a>
-          <a class="btn" href="#work">See her content</a>
+          <a class="btn primary" href="#contact">Work with me</a>
+          <a class="btn" href="#work">Watch my content</a>
+        </div>
+        <div class="platforms">
+          <a class="plat" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener"><b>TT</b><strong>3.6K</strong><span>@she_a_nat</span></a>
+          <a class="plat" href="https://www.instagram.com/nathaly.ab/" target="_blank" rel="noopener"><b>IG</b><strong>2.6K</strong><span>@nathaly.ab</span></a>
         </div>
       </div>
-      <aside class="card" aria-label="Profile summary">
+      <aside class="card" aria-label="Profile photo">
         <div class="photo">
-          <img src="Media/nathaly.jpg" alt="Nathaly Almanzar" onerror="this.remove()">
-          <div class="photo-ph" aria-hidden="true"><span class="mono">NA</span><small>Add nathaly.jpg</small></div>
+          <img src="Media/nathaly.jpg" alt="Nathaly Almanzar in an orange jacket in front of an ivy wall">
           <span class="badge">Open to collabs</span>
         </div>
-        <div class="who-row">
-          <div><div class="handle">@she_a_nat</div><div class="tags">Fit &middot; Fab &middot; Fun</div></div>
-          <a class="btn" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener" style="padding:8px 16px;font-size:13px">TikTok</a>
-        </div>
-        <dl>
-          <div><dt>Followers</dt><dd>3.6K</dd></div>
-          <div><dt>Likes</dt><dd>480.9K</dd></div>
-          <div><dt>Based in</dt><dd>NJ</dd></div>
-        </dl>
+        <div class="meta"><strong>Nat</strong><span>Fit &middot; Fab &middot; Fun</span></div>
       </aside>
     </div>
   </div>
 
   <div class="band"><div class="wrap">
-    <div class="stat"><div class="v">3.6K</div><div class="k">TikTok followers</div></div>
-    <div class="stat"><div class="v">480.9K</div><div class="k">Total likes</div></div>
-    <div class="stat"><div class="v">132</div><div class="k">Likes per follower</div></div>
-    <div class="stat"><div class="v">NJ</div><div class="k">Based in New Jersey</div></div>
+    <div class="stat"><div class="v">6.2K</div><div class="k">Followers across TikTok and Instagram</div></div>
+    <div class="stat"><div class="v">480.9K</div><div class="k">Likes on TikTok</div></div>
+    <div class="stat"><div class="v"><em>2</em></div><div class="k">Videos past 500K views</div></div>
+    <div class="stat"><div class="v">44.2K</div><div class="k">Views on my top restaurant video</div></div>
   </div></div>
 
   <div class="wrap">
     <section id="about">
       <div class="about">
         <div>
-          <div class="head" style="margin-bottom:22px"><span class="marker">About</span><h2>Hi, I'm Nat</h2></div>
-          <p>I film my life the way you'd keep a diary: the workouts, the outfits, the weekends with my girls. People follow along because it's real.</p>
-          <p>I don't post everything, and that's on purpose. When a product shows up on my page, my viewers know I actually use it. That's why my videos reach so far past my follower count.</p>
+          <div class="head" style="margin-bottom:24px"><span class="marker">About</span><h2>Hi, I'm Nat</h2></div>
+          <div class="copy">
+            <p>I film my life the way you'd keep a diary: the workouts, the outfits, the date nights, and the weekends with my girls. People follow along because it's real.</p>
+            <p>I don't post everything, and that's on purpose. When a product shows up on my page, my followers know I actually use it. That's the kind of content I want to make with your brand.</p>
+          </div>
           <dl class="facts">
-            <dt>Based in</dt><dd>New Jersey</dd>
+            <dt>Based in</dt><dd>New Jersey, minutes from NYC</dd>
             <dt>Background</dt><dd>Dominican-American</dd>
-            <dt>Content</dt><dd>Video diaries, fitness, style, lifestyle</dd>
-            <dt>Storefront</dt><dd><a href="https://www.amazon.com/shop/nathaly.ab" target="_blank" rel="noopener">Amazon storefront</a></dd>
+            <dt>I post about</dt><dd>Style, beauty, food, fitness, travel</dd>
+            <dt>Shop my picks</dt><dd><a href="https://www.amazon.com/shop/nathaly.ab" target="_blank" rel="noopener">My Amazon storefront</a></dd>
           </dl>
         </div>
-        <figure class="quote" style="margin:0">
-          <blockquote>"I've been feeling like the sun."</blockquote>
-          <cite>Nat, on Instagram</cite>
+        <figure class="quote">
+          <blockquote>Life is too short to not enjoy every ride.</blockquote>
+          <cite>Nat, on TikTok</cite>
         </figure>
       </div>
     </section>
 
     <section id="content" style="padding-top:0">
-      <div class="head"><span class="marker">Content</span><h2>What she creates</h2><p>The four things I post about most, and the brands that fit each one.</p></div>
+      <div class="head"><span class="marker">What I create</span><h2>My content</h2><p>The four things I post about most, and the brands that fit each one.</p></div>
       <div class="pillars" id="pillars"></div>
     </section>
 
     <section id="work" style="padding-top:0">
-      <div class="head"><span class="marker">Featured work</span><h2>My content</h2><p>A few of my favorite TikToks. Tap any video to watch.</p></div>
+      <div class="head"><span class="marker">Featured videos</span><h2>Press play</h2><p>A few of my favorite TikToks. Tap any video to watch it here.</p></div>
       <div class="work" id="work-grid"></div>
     </section>
 
-    <section id="partner" style="padding-top:0">
-      <div class="head"><span class="marker">Partnerships</span><h2>Ways to work together</h2></div>
-      <div class="packs">
-        <article class="pack"><span class="len">1 video</span><h3>Single feature</h3><ul><li>One TikTok featuring your product in my routine</li><li>Organic, in my own voice</li><li>Ideal for launches and first collaborations</li></ul></article>
-        <article class="pack feat"><span class="len">2 to 3 videos</span><h3>Content series</h3><ul><li>A short series over several weeks</li><li>First impression, routine, and results</li><li>Optional Instagram Story reshares</li></ul></article>
-        <article class="pack"><span class="len">Ongoing</span><h3>Brand partnership</h3><ul><li>Monthly content for a season</li><li>Placement in my Amazon storefront</li><li>Early access to new launches</li></ul></article>
+    <section id="brands" style="padding-top:0">
+      <div class="head"><span class="marker">Brands on my page</span><h2>Brands I already love</h2><p>Brands I've tagged and featured in my own content because I use them.</p></div>
+      <div class="brands">
+        <div class="brand-cell"><div>rhode<small>Beauty</small></div></div>
+        <div class="brand-cell"><div>M&middot;A&middot;C<small>Beauty</small></div></div>
+        <div class="brand-cell"><div>NYX<small>Beauty</small></div></div>
+        <div class="brand-cell"><div>Color Wow<small>Hair</small></div></div>
+        <div class="brand-cell"><div>Wella<small>Hair</small></div></div>
+        <div class="brand-cell"><div>It's a 10<small>Hair</small></div></div>
+        <div class="brand-cell"><div>Marriott<small>Travel</small></div></div>
+        <div class="brand-cell"><div>American Airlines<small>Travel</small></div></div>
+        <div class="brand-cell"><div>Taco Bell<small>Food</small></div></div>
+        <div class="brand-cell"><div>Starbucks<small>Food</small></div></div>
       </div>
-      <p class="fine">Rates and usage rights are quoted per project. Paid ad usage is priced separately.</p>
+      <p class="note">Organic features only. These are not paid partnerships.</p>
+    </section>
+
+    <section id="partner" style="padding-top:0">
+      <div class="head"><span class="marker">Work with me</span><h2>Ways we can work together</h2></div>
+      <div class="packs">
+        <article class="pack"><span class="len">1 video</span><h3>Single feature</h3><ul><li>One TikTok with your product in my real routine</li><li>Filmed and edited in my own voice</li><li>Great for launches and first collabs</li></ul></article>
+        <article class="pack feat"><span class="len">2 to 3 videos</span><h3>Content series</h3><ul><li>A short series over a few weeks</li><li>First impression, routine, then results</li><li>Instagram Story reshares included</li></ul></article>
+        <article class="pack"><span class="len">Ongoing</span><h3>Brand partnership</h3><ul><li>Monthly content for a season</li><li>A spot in my Amazon storefront</li><li>First look at your new launches</li></ul></article>
+      </div>
+      <div class="addons">Add-ons: <span>UGC for your ads</span><span>Instagram Reels</span><span>Event coverage</span><span>Usage rights</span></div>
     </section>
 
     <section id="contact" style="padding-top:0">
       <div class="contact">
         <div>
           <span class="marker">Contact</span>
-          <h2 style="margin-top:12px">Let's write the <em>next chapter.</em></h2>
-          <p>For partnerships, events, and gifting inquiries, reach out to me or my management team.</p>
+          <h2 style="margin-top:14px">Let's write the <em>next chapter.</em></h2>
+          <p>For partnerships, events, and gifting, reach out to me or my management team. Rates and usage are quoted per project.</p>
         </div>
         <div class="mail">
-          <div class="mrow"><div style="min-width:0"><div class="k">Nat</div><div class="v">natmanzar@gmail.com</div></div><button class="copy" data-copy="natmanzar@gmail.com">Copy</button></div>
-          <div class="mrow"><div style="min-width:0"><div class="k">Management</div><div class="v">loperenamanagementllc@gmail.com</div></div><button class="copy" data-copy="loperenamanagementllc@gmail.com">Copy</button></div>
-          <div class="mrow"><div class="k">Find me</div><div><a href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">TikTok</a> &nbsp;&middot;&nbsp; <a href="https://www.amazon.com/shop/nathaly.ab" target="_blank" rel="noopener">Amazon</a></div></div>
+          <div class="mrow"><div style="min-width:0"><div class="k">Me</div><div class="v">natmanzar@gmail.com</div></div><button class="copy" data-copy="natmanzar@gmail.com">Copy</button></div>
+          <div class="mrow"><div style="min-width:0"><div class="k">My management</div><div class="v">loperenamanagementllc@gmail.com</div></div><button class="copy" data-copy="loperenamanagementllc@gmail.com">Copy</button></div>
+          <div class="mrow"><div class="k">Find me</div><div><a href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">TikTok</a> &nbsp;&middot;&nbsp; <a href="https://www.instagram.com/nathaly.ab/" target="_blank" rel="noopener">Instagram</a> &nbsp;&middot;&nbsp; <a href="https://www.amazon.com/shop/nathaly.ab" target="_blank" rel="noopener">Amazon</a></div></div>
         </div>
       </div>
     </section>
   </div>
 </main>
 
-<footer class="wrap">Represented by Loperena Management &middot; &copy; 2026 Nathaly Almanzar</footer>
+<footer class="wrap"><span>&copy; 2026 Nathaly Almanzar</span><span>Represented by Loperena Management</span></footer>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Video">
   <div class="lb-card">
     <div class="lb-top"><h3 id="lbTitle">Video</h3><button class="btn" id="lbClose" style="padding:6px 14px;font-size:13px">Close</button></div>
     <div class="lb-video" id="lbVideo"></div>
-    <button class="btn primary" id="lbFull" type="button">Full screen</button>
-    <a class="btn" id="lbLink" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">Watch on TikTok</a>
+    <div class="lb-actions">
+      <button class="btn primary" id="lbFull" type="button">Full screen</button>
+      <a class="btn" id="lbLink" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">Open in TikTok</a>
+    </div>
   </div>
 </div>
 
 <script>
-/* ============ EDIT HERE ============
-   Paste TikTok links into `url`, e.g. https://www.tiktok.com/@she_a_nat/video/1234567890123456789
-   Rename `title` and `cat` to match each video. An empty url opens her profile. */
+/* ============ EDIT HERE ============ */
 const VIDEOS = [
-  { url:"https://www.tiktok.com/@she_a_nat/video/7072872833705053483", thumb:"Media/video-1.jpg", title:"Salon hair struggles", cat:"Hair · 532.5K views" },
-  { url:"https://www.tiktok.com/@she_a_nat/video/7671734984964656397", thumb:"Media/video-2.jpg", title:"NJ handroll date night", cat:"Food · 44.2K views" },
-  { url:"https://www.tiktok.com/@she_a_nat/video/7698211971447016717", thumb:"Media/video-3.jpg", title:"Victoria's Secret Fashion Show", cat:"Events & fashion" },
-  { url:"https://www.tiktok.com/@she_a_nat/video/7676897636460301582", thumb:"Media/video-4.jpg", title:"Weekend at the Marriott", cat:"Travel & hotels" },
-  { url:"https://www.tiktok.com/@she_a_nat/video/7692969448453459213", thumb:"Media/video-5.jpg", title:"Trying boxing", cat:"Fitness" },
-  { url:"https://www.tiktok.com/@she_a_nat/video/7681904049855188238", thumb:"Media/video-6.jpg", title:"Movie night with the girls", cat:"Her girls" }
-]
+  { url:"https://www.tiktok.com/@she_a_nat/video/7072872833705053483", thumb:"Media/video-1.jpg", title:"My salon hair saga", cat:"Hair", views:"532.5K views" },
+  { url:"https://www.tiktok.com/@she_a_nat/video/7671734984964656397", thumb:"Media/video-2.jpg", title:"Handroll date night in Montclair", cat:"Food", views:"44.2K views" },
+  { url:"https://www.tiktok.com/@she_a_nat/video/7698211971447016717", thumb:"Media/video-3.jpg", title:"My first Victoria's Secret show", cat:"Fashion", views:"" },
+  { url:"https://www.tiktok.com/@she_a_nat/video/7676897636460301582", thumb:"Media/video-4.jpg", title:"Our weekend at the Marriott", cat:"Travel", views:"" },
+  { url:"https://www.tiktok.com/@she_a_nat/video/7692969448453459213", thumb:"Media/video-5.jpg", title:"Trying boxing for the first time", cat:"Fitness", views:"" },
+  { url:"https://www.tiktok.com/@she_a_nat/video/7681904049855188238", thumb:"Media/video-6.jpg", title:"Movie night with my girls", cat:"My girls", views:"" }
+];
 const PILLARS = [
-  { k:"Fit", h:"Fitness", d:"Workouts, gym routines, and the real side of staying active.", f:"Activewear, supplements, wellness, gyms" },
-  { k:"Fab", h:"Style & beauty", d:"Getting ready, outfits, and the products I actually reach for.", f:"Beauty, haircare, fashion, Amazon brands" },
-  { k:"Fun", h:"Video diary", d:"Weekends, food runs, and everyday life around New Jersey.", f:"Restaurants, events, retail, entertainment" },
-  { k:"Her", h:"Her girls", d:"Girls' nights, birthdays, and the friends who show up in my diary.", f:"Food and drink, home, gifting, beauty sets" }
+  { h:"Style & beauty", d:"Getting ready, outfits, hair, and the products I actually reach for.", f:"Beauty, haircare, fashion, Amazon brands" },
+  { h:"Food & nights out", d:"Date nights, new restaurants, and the spots I'd send you to in NJ and NYC.", f:"Restaurants, drinks, events, local spots" },
+  { h:"Fitness", d:"Workouts, gym fits, and trying new things that scare me, like boxing.", f:"Activewear, wellness, gyms, supplements" },
+  { h:"My girls", d:"Girls' nights, trips, and birthdays with the friends who show up in every diary entry.", f:"Travel, hotels, gifting, home, beauty sets" }
 ];
-const GRADS = [
-  "linear-gradient(160deg,#e8357f,#f6c445)","linear-gradient(160deg,#f6c445,#f08cb6)","linear-gradient(160deg,#f08cb6,#e8357f)",
-  "linear-gradient(160deg,#e8a11a,#e8357f)","linear-gradient(160deg,#c92a6c,#f6c445)","linear-gradient(160deg,#ffb3d1,#e8357f)"
-];
+const GRADS = ["#e2367d","#f4bf3a","#f08cb6","#e8a11a","#c92a6c","#ffb3d1"];
 const PROFILE = "https://www.tiktok.com/@she_a_nat";
 const idFrom = u => (u.match(/video\/(\d+)/)||[])[1];
 
 document.getElementById("pillars").innerHTML = PILLARS.map((p,i)=>`
-  <article class="pillar"><div class="dot" style="background:${i%2?"var(--tint)":"var(--blush)"};color:var(--pink)">${p.k[0]}</div>
-  <h3>${p.h}</h3><p>${p.d}</p><div class="fits"><b>Brand fit</b>${p.f}</div></article>`).join("");
+  <article class="pillar"><span class="n">0${i+1}</span><h3>${p.h}</h3><p>${p.d}</p><div class="fits"><b>Brand fit</b>${p.f}</div></article>`).join("");
 
 document.getElementById("work-grid").innerHTML = VIDEOS.map((v,i)=>`
   <button class="vid" data-video="${i}" aria-label="Watch ${v.title}">
-    <div class="thumb" style="background:linear-gradient(180deg,rgba(30,10,25,0) 50%,rgba(30,10,25,.8)),${v.thumb?`url(${v.thumb}) center/cover,`:""}${GRADS[i%GRADS.length]}"><span class="play" aria-hidden="true"></span><span class="t">${v.title}</span></div>
-    <span class="cat">${v.cat}</span>
+    <div class="thumb" style="background:linear-gradient(180deg,rgba(26,11,22,0) 48%,rgba(26,11,22,.82)),${v.thumb?`url(${v.thumb}) center/cover,`:""}${GRADS[i%GRADS.length]}"><span class="play" aria-hidden="true"></span><span class="t">${v.title}</span></div>
+    <span class="cat"><span>${v.cat}</span><span>${v.views}</span></span>
   </button>`).join("");
 
 const lb = document.getElementById("lb");
 function openVideo(i){
-  const v = VIDEOS[i], id = v.url && idFrom(v.url);
+  const v = VIDEOS[i], id = idFrom(v.url);
   document.getElementById("lbTitle").textContent = v.title;
   document.getElementById("lbVideo").innerHTML = id
     ? `<iframe src="https://www.tiktok.com/player/v1/${id}?autoplay=1&rel=0&music_info=0&description=0&fullscreen_button=1" title="${v.title}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`
-    : `<div><div style="font-family:var(--display);font-size:24px">${v.title}</div><p style="margin-top:8px;font-size:14px;opacity:.8">Watch this video on TikTok.</p></div>`;
+    : "";
   document.getElementById("lbLink").href = v.url || PROFILE;
   lb.hidden = false; document.getElementById("lbClose").focus();
 }
@@ -346,7 +373,7 @@ document.getElementById("lbFull").onclick = () => {
   if (go) { try { const p = go.call(el); if (p && p.catch) p.catch(()=>{}); } catch(_){} }
 };
 lb.addEventListener("click", e => { if(e.target === lb) closeVideo(); });
-document.addEventListener("keydown", e => { if(e.key === "Escape" && !lb.hidden) closeVideo(); });
+document.addEventListener("keydown", e => { if(e.key === "Escape" && !lb.hidden && !document.fullscreenElement) closeVideo(); });
 
 document.addEventListener("click", e => {
   const v = e.target.closest("[data-video]"); if(v) return openVideo(+v.dataset.video);
@@ -356,6 +383,5 @@ document.addEventListener("click", e => {
   catch(_) { c.textContent = "Select it"; }
 });
 </script>
-
 </body>
 </html>
