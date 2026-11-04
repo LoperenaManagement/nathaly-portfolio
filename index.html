@@ -103,11 +103,15 @@ section{padding-block:96px}
 /* about */
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
 .about p+p{margin-top:16px}
-.about .copy{font-size:18px}
-.quote{margin:0;background:var(--blush);border-radius:16px;padding:36px 34px;position:relative}
-.quote::before{content:"\201C";position:absolute;top:-8px;left:26px;font-family:var(--display);font-size:110px;line-height:1;color:var(--pink)}
-.quote blockquote{margin:28px 0 0;font-family:var(--display);font-size:clamp(28px,3.2vw,36px);line-height:1.15}
-.quote cite{display:block;margin-top:16px;font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
+.about .bio{font-size:18px}
+.quote{margin:0;background:var(--blush);border-radius:18px;padding:40px 38px 34px;display:flex;flex-direction:column;gap:28px;align-self:stretch;position:relative;overflow:hidden}
+.quote::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;background:var(--sun);opacity:.22}
+.quote .mark{font-family:var(--display);font-size:96px;line-height:.6;height:44px;color:var(--pink)}
+.quote blockquote{margin:0;font-family:var(--display);font-size:clamp(32px,3.6vw,44px);line-height:1.1;flex:1;position:relative}
+.quote figcaption{display:flex;align-items:center;gap:14px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--ink) 14%,transparent);position:relative}
+.quote figcaption img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 20%;box-shadow:0 0 0 3px var(--sun)}
+.quote figcaption strong{display:block;font-weight:600;font-size:16px}
+.quote figcaption span{display:block;color:var(--muted);font-size:14px}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:16px}
 .facts dt{color:var(--muted)}
 .facts dd{margin:0;font-weight:500;min-width:0}
@@ -172,7 +176,7 @@ footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16
 .lb-video{aspect-ratio:9/16;max-height:64vh;width:100%;background:#000;border-radius:10px;overflow:hidden}
 .lb-video iframe{width:100%;height:100%;border:0}
 .lb-video:fullscreen{max-height:none;border-radius:0}
-.lb-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lb-actions{display:grid;gap:10px}
 .lb-actions .btn{padding:11px 14px;font-size:14px}
 
 @media (max-width:920px){
@@ -232,7 +236,7 @@ footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16
   <div class="band"><div class="wrap">
     <div class="stat"><div class="v">6.2K</div><div class="k">Followers across TikTok and Instagram</div></div>
     <div class="stat"><div class="v">480.9K</div><div class="k">Likes on TikTok</div></div>
-    <div class="stat"><div class="v"><em>2</em></div><div class="k">Videos past 500K views</div></div>
+    <div class="stat"><div class="v"><em>1.4M+</em></div><div class="k">Total views on TikTok</div></div>
     <div class="stat"><div class="v">44.2K</div><div class="k">Views on my top restaurant video</div></div>
   </div></div>
 
@@ -241,7 +245,7 @@ footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16
       <div class="about">
         <div>
           <div class="head" style="margin-bottom:24px"><span class="marker">About</span><h2>Hi, I'm Nat</h2></div>
-          <div class="copy">
+          <div class="bio">
             <p>I film my life the way you'd keep a diary: the workouts, the outfits, the date nights, and the weekends with my girls. People follow along because it's real.</p>
             <p>I don't post everything, and that's on purpose. When a product shows up on my page, my followers know I actually use it. That's the kind of content I want to make with your brand.</p>
           </div>
@@ -253,8 +257,9 @@ footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16
           </dl>
         </div>
         <figure class="quote">
+          <div class="mark" aria-hidden="true">&ldquo;</div>
           <blockquote>Life is too short to not enjoy every ride.</blockquote>
-          <cite>Nat, on TikTok</cite>
+          <figcaption><img src="Media/nathaly.jpg" alt=""><div><strong>Nat</strong><span>From one of my TikTok captions</span></div></figcaption>
         </figure>
       </div>
     </section>
@@ -320,8 +325,7 @@ footer{padding-block:36px 52px;display:flex;justify-content:space-between;gap:16
     <div class="lb-top"><h3 id="lbTitle">Video</h3><button class="btn" id="lbClose" style="padding:6px 14px;font-size:13px">Close</button></div>
     <div class="lb-video" id="lbVideo"></div>
     <div class="lb-actions">
-      <button class="btn primary" id="lbFull" type="button">Full screen</button>
-      <a class="btn" id="lbLink" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">Open in TikTok</a>
+      <a class="btn primary" id="lbLink" href="https://www.tiktok.com/@she_a_nat" target="_blank" rel="noopener">Open in TikTok</a>
     </div>
   </div>
 </div>
@@ -367,11 +371,6 @@ function openVideo(i){
 }
 function closeVideo(){ lb.hidden = true; document.getElementById("lbVideo").innerHTML = ""; }
 document.getElementById("lbClose").onclick = closeVideo;
-document.getElementById("lbFull").onclick = () => {
-  const el = document.getElementById("lbVideo");
-  const go = el.requestFullscreen || el.webkitRequestFullscreen;
-  if (go) { try { const p = go.call(el); if (p && p.catch) p.catch(()=>{}); } catch(_){} }
-};
 lb.addEventListener("click", e => { if(e.target === lb) closeVideo(); });
 document.addEventListener("keydown", e => { if(e.key === "Escape" && !lb.hidden && !document.fullscreenElement) closeVideo(); });
 
